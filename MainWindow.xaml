@@ -1,0 +1,29 @@
+﻿<Window x:Class="SfDataGridDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:local="clr-namespace:SfDataGridDemo"
+        Title="SfDataGrid Demo"      
+        Icon="App.ico"
+        >
+    <Window.DataContext>
+        <local:ViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <syncfusion:SfDataGrid x:Name="datagrid"                      
+                               AllowEditing="True" EditTrigger="OnTap"
+                               ShowRowHeader="True"
+                               AutoGenerateColumns="False"                                     
+                               AddNewRowPosition="Top"
+                               NewItemPlaceholderPosition="AtBeginning"
+                               ItemsSource="{Binding OrderInfoCollection }">
+            <syncfusion:SfDataGrid.Columns>
+                <syncfusion:GridTextColumn MappingName="OrderID" />
+                <syncfusion:GridTextColumn MappingName="CustomerID" />
+                <syncfusion:GridTextColumn MappingName="CustomerName"/>
+                <syncfusion:GridTextColumn MappingName="Country"/>
+                <syncfusion:GridTextColumn MappingName="ShipCity"/>
+            </syncfusion:SfDataGrid.Columns>
+        </syncfusion:SfDataGrid>
+    </Grid>
+</Window>
