@@ -1,4 +1,4 @@
-# how-to-move-selection-to-record-when-add-the-new-row-in-sfdatagrid-contains-empty-record-in-wpf-data
+# How to move selection to record when add the new row in SfDataGrid contains empty record in WPF DataGrid (SfDataGrid)?
 
 ## About the sample
 This sample illustrates that how to move selection to record when add the new row in SfDataGrid contains empty record in WPF DataGrid (SfDataGrid).
@@ -31,8 +31,9 @@ private void sfdatagrid_RowValidated(object sender, RowValidatedEventArgs e)
     }
 }
 ```
+![CurrentCellAddNewRow](CurrentCellAddNewRow.png)
 
 ## Requirements to run the demo
 Visual Studio 2015 and above versions
 
-![CurrentCellAddNewRow](CurrentCellAddNewRow.png)
+
