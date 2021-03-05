@@ -1,9 +1,10 @@
 # How to move selection to record when add the new row in SfDataGrid contains empty record in WPF DataGrid (SfDataGrid)?
 
 ## About the sample
-This sample illustrates that how to move selection to record when add the new row in SfDataGrid contains empty record in WPF DataGrid (SfDataGrid).
 
-By default, the current cell will remain in the AddNewRow after adding a record when the grid has no records. However, the current cell can be moved to the newly added record by moving the current cell in SfDataGrid.RowValidated event using the ScrollInView() method. The state of AddNewRow can be changed to normal using VisualStateManager.GoToState() method.
+This sample illustrates that how to move selection to record when add the new row in SfDataGrid contains empty record in [WPF DataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid) (SfDataGrid).
+
+The current cell will remain in the AddNewRow after adding a record when the grid has no records in [WPF DataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid) (SfDataGrid). But, you can move the current cell to the newly added record by moving the current cell in [SfDataGrid.RowValidated](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowValidated_EV.html) event using the ScrollInView() method. You can also change the AddNewRow state to the normal using [VisualStateManager.GoToState()](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.visualstatemanager.gotostate?view=winrt-19041) method.
 
 ```C#
 //Event subscription
