@@ -34,6 +34,8 @@ private void sfdatagrid_RowValidated(object sender, RowValidatedEventArgs e)
 ```
 ![CurrentCellAddNewRow](CurrentCellAddNewRow.png)
 
+KB article - [How to move selection to record when add the new row in SfDataGrid contains empty record in WPF DataGrid (SfDataGrid)?](https://www.syncfusion.com/kb/11768/how-to-move-selection-to-record-when-add-the-new-row-in-sfdatagrid-contains-empty-record-in)
+
 ## Requirements to run the demo
 Visual Studio 2015 and above versions
 
